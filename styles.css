@@ -23,6 +23,7 @@ html {
 
 body {
   font-family: "Open Sans", sans-serif;
+  background: linear-gradient(180deg, #ffc0cb, #f4c0ff);
 }
 
 p {
@@ -38,4 +39,54 @@ img {
   max-width: 900px;
   margin: 0 auto;
   padding: 0 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.counter-div{
+  width: 40rem;
+  border: 1px solid black;
+  padding: 1rem;
+  background-color: rgba(82, 170, 214, 0.6);
+  color: var(--white);
+  text-align: center;
+  border-radius: 10px;
+}
+
+.counter-div > * {
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+h1{
+  font-size: 3.5rem;
+}
+
+.count{
+  font-size: 4rem;
+}
+
+.buttons button{
+  padding: 1rem;
+  margin: 0 1rem;
+  font-size: 1.5rem;
+  color: white;
+  font-weight: 700;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+button.subtract{
+  background-color: red;
+}
+button.reset{
+  background-color: white;
+  color: black
+}
+button.add{
+  background-color: green;
 }
